@@ -1,7 +1,7 @@
 node('master') { 
 	checkout scm 
 	stage('build') {
-		withMaven(jdk: 'Default Java', maven: 'Default Maven') {
+		withMaven(jdk: 'Default java', maven: 'Default maven') {
 			sh 'mvn clean install' 
 		}
 	} 
